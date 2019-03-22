@@ -1,0 +1,41 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!––Container of card start ––>
+
+<div class="container" style="margin-top: 100px" >
+    <div class="card-group">
+  <div class="card">
+    <img src="{% static 'myapp/images/c.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Jonathan Dela Cruz</h5>
+      <p class="card-text">CEO Nathan Developement</p>
+      <p class="card-text">Full Stack Developer</p>
+      <p class="card-text">UI/UX Developer</p>
+    </div>
+
+  </div>
+  <div class="card">
+    <img src="{% static 'myapp/images/p.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Melody Carana</h5>
+      <p class="card-text">Graphic Artist.</p>
+      <p class="card-text">Web Designer</p>
+      <p class="card-text">UI/UX Designer</p>
+    </div>
+
+  </div>
+  <div class="card">
+    <img src="{% static 'myapp/images/py.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Peter Anderson </h5>
+      <p class="card-text"> Pyton Developer</p>
+    </div>
+
+  </div>
+</div>
+</div>
+<!––container of card  end ––>
+{% endblock %}

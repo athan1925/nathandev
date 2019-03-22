@@ -1,0 +1,96 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container" style="margin-top: 100px">
+    <div class="card-group">
+        <div class="card">
+            <img src="{% static 'myapp/images/ser3.jpg' %}" class="card-img-top" alt="Web Development">
+            <div class="card-body">
+                <a href="#"><h5 class="card-title">Web Development</h5></a>
+                <p class="card-text">Web Application </p>
+                <p class="card-text">ECommmerce Application</p>
+                <p class="card-text">Web Design </p>
+                <p class="card-text">Wordpress Development</p>
+                <p class="card-text">
+                    <small class="text-muted"></small>
+                    <a href="{% url 'portfolio' %}" class="card-link">Check out my Portfolio</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static 'myapp/images/ser2.png' %}" class="card-img-top" alt="Mobile Development">
+            <div class="card-body">
+                <a href="#"><h5 class="card-title">Mobile Development</h5></a>
+                <p class="card-text">Mobile Application</p>
+                <p class="card-text">Mobile Custom App</p>
+                <p class="card-text">Simple Mobile Application</p>
+                <p class="card-text">
+                    <small class="text-muted"></small>
+                    <a href="{% url 'portfolio' %}" class="card-link">Check out my Portfolio</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static 'myapp/images/ser1.jpg' %}" class="card-img-top" alt="Software Development">
+            <div class="card-body">
+                <a href="#"><h5 class="card-title">Software Development</h5></a>
+                <p class="card-text">We develop System or custom software for your company </p>
+                <p class="card-text">
+                    <small class="text-muted"></small>
+                    <a href="{% url 'portfolio' %}" class="card-link">Check out my Portfolio</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container" style="margin-top: 50px">
+    <div class="card-group">
+        <div class="card">
+            <img src="{% static 'myapp/images/ser6.jpg' %}" class="card-img-top" alt="SEO services">
+            <div class="card-body">
+                <a href="#"><h5 class="card-title">SEO Service</h5></a>
+                <p class="card-text">We Optimized your website to boost your rank and visibility online </p>
+
+                <p class="card-text">
+                    <small class="text-muted"></small>
+                    <a href="{% url 'portfolio' %}" class="card-link">Check out my Portfolio</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static 'myapp/images/ser7.jpg' %}" class="card-img-top" alt="Mobile Development">
+            <div class="card-body">
+                <a href="#"><h5 class="card-title">Online Digital Marketing</h5></a>
+                <p class="card-text">We help to make more sales using our marketing technique and strategies</p>
+
+                <p class="card-text">
+                    <small class="text-muted"></small>
+                    <a href="{% url 'portfolio' %}" class="card-link">Check out my Portfolio</a>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static 'myapp/images/ser8.jpeg' %}" class="card-img-top" alt="Software Development">
+            <div class="card-body">
+                <a href="#"><h5 class="card-title">Cyber Security</h5></a>
+                <p class="card-text">Our Company Provide services for security to your system </p>
+                <p class="card-text">
+                    <small class="text-muted"></small>
+                    <a href="{% url 'portfolio' %}" class="card-link">Check out my Portfolio</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock %}

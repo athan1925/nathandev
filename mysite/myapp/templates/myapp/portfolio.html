@@ -1,0 +1,67 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container" style="margin-top: 100px">
+    <div class="card-group">
+  <div class="card">
+    <img src="{% static 'myapp/images/port1.JPG' %}" class="card-img-top" alt="portfolio 1">
+    <div class="card-body">
+     <a href="https://www.redpisofare.com/" target="_blank"><h5 class="card-title">www.redpiso.com</h5></a>
+      <p class="card-text">Website for Promo of airlines</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+      <a href="{% url 'services' %}" class="card-link">Check out my Services</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'myapp/images/port3.png' %}" class="card-img-top" alt="Portfolio 3">
+    <div class="card-body">
+      <a href="https://piso1fare.com/" target="_blank"><h5 class="card-title">www.piso1fare.com</h5></a>
+      <p class="card-text">Promo Website</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+      <a href="{% url 'services' %}" class="card-link">Check out my Services</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'myapp/images/port2.jpg' %}" class="card-img-top" alt="portfolio 2">
+    <div class="card-body">
+      <a href="https://github.com/athan1925/InformationVoters" target="_blank"><h5 class="card-title">Voters Information System</h5></a>
+      <p class="card-text">This is a  voters information system </p>
+      <p class="card-text"><small class="text-muted"></small></p>
+      <a href="{% url 'services' %}" class="card-link">Check out my Services</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="container" style="margin-top: 100px">
+    <div class="card-group">
+  <div class="card">
+    <img src="{% static 'myapp/images/port6.PNG' %}" class="card-img-top" alt="portfolio 6">
+    <div class="card-body">
+     <a href="https://play.google.com/store/apps/details?id=com.imabuilder.pisofare.pisofareforcebupacific" target="_blank"><h5 class="card-title">CebuPac Promo App</h5></a>
+      <p class="card-text">App for  cebupac Promo of airlines</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+      <a href="{% url 'services' %}" class="card-link">Check out my Services</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'myapp/images/port5.PNG' %}" class="card-img-top" alt="Portfolio 5">
+    <div class="card-body">
+      <a href="https://play.google.com/store/apps/details?id=com.dev.pisohanfare.pisofareapp" target="_blank"><h5 class="card-title">Piso Fare Mobile App</h5></a>
+      <p class="card-text">Promo Mobile App</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+      <a href="{% url 'services' %}" class="card-link">Check out my Services</a>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+
+{% endblock %}

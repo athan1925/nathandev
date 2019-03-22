@@ -1,0 +1,26 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!––Container of card start ––>
+
+<div class="container" style="margin-top: 60px">
+    <br><br>
+
+    <div class="articles">
+        {% for blog in blogs %}
+        <div class="articles">
+
+
+            <h2><a href="{% url 'details' slug=blog.slug%}" target="_blank">{{blog.title}}</a></h2>
+            <p>{{blog.snippet}} </p>
+            <small>Date: &nbsp;&nbsp;{{blog.date}}</small>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!––container of card  end ––>
+{% endblock %}
+
+<!---{% url 'blogss'%}--->

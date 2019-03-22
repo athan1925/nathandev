@@ -1,0 +1,29 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!––Container of card start ––>
+
+<div class="container" style="margin-top: 60px">
+    <br><br>
+
+    <div class="articles">
+
+        <div class="imagecontainer" style="margin-top: 60px ">
+            <img src="{{blog.image.url}}" width="950" height="500" align="middle"/>
+        </div>
+
+        <div class="articles">
+            <h2>{{blog.title}}</a> </h2>
+            <small><i>Date Published</i>&nbsp;&nbsp;{{blog.date}}</small>
+
+            <p>{{blog.body}} </p>
+
+        </div>
+
+    </div>
+</div>
+<!––container of card  end ––>
+{% endblock %}
+
